@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author">
+    <title>COCONUT SHOP</title>
+    <link rel="wesite icon" value="png" href="./img/ccnt.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/demo.css">
+  
+  </head>
+  <body>
+ <header class="intro">
+ <h1>COCONUT SHOP</h1>
+ <p>#520 2nd Street, Maleshwaram, Banglore.</p>
+
+ <div class="action">
+ <a href="welcome.html" title="Log Out the Page" class="btn back">Log Out</a>
+ </div>
+ </header>
+    
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+            
+            <input type="radio" value="home">Cash On Delivery<br/>
+            <button class="purchase-btn" value="submit">PURCHASE</button>
+            
+            <form action="./php/qr.php" method="post">
+            <input type="radio" value="upi">UPI<br/>
+            <button class="purchase-btn" value="submit">PURCHASE</button></form>
+            
+             <form action="./php/bill.php" method="post">
+              <input type="radio" value="cad">Credit and Debit<br/>
+              <button class="purchase-btn" value="submit">PURCHASE</button></form>
+              
+        </div>
+      </div>
+</div>
+      <main>
+  <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+
+  <div class="items-container">
+    <div class="card-1 card">
+      <img class="product-image" src="./img/fccnt.png" alt="">
+        <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$5</span>
+    </div>
+    <div class="card-2 card">
+      <img class="product-image" src="./img/ccnt.png" alt="">
+      <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">$8</span>
+    </div>
+    <div class="card-3 card">
+      <img class="product-image" src="./img/dryccnt.png" alt="">
+        <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$10</span>
+    </div>
+    <div class="card-4 card">
+      <img class="product-image" src="./img/ccntpeel.png" alt="">
+         <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">$2</span>
+    </div>
+  </div> 
+
+   </main>
+    <script  src="./js/script.js"></script> 
+  </body>
+</html>

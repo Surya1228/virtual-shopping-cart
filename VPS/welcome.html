@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COCONUT SHOP</title>
+<link rel="wesite icon" value="png" href="./img/ccnt.png">
+<style>
+body{
+            background-image:url('./img/wp.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+        }
+ .text{
+ font-family:'Oswald',sans-serif;
+ font-size: 70px;
+ background-image: url('./img/ccnt.png');
+ -webkit-background-clip: text;
+ color: transparent;
+ background-position: center;
+ }
+ 
+.button {
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<center>
+<div style="position:absolute; left:10px;top:90px;">
+<h1 class="text">WELCOME TO COCONUT SHOP</h1>
+<div style="position:absolute; left:10px;top:150px;">
+<form action="log.html" method="POST"> 
+<button class="button button1">Admin</button> 
+</form>
+
+<div style="position:absolute; left:120px;top:0px;">
+<form action="userlogin.html" method="POST">  
+<button class="button button2">Customer</button>
+</form>
+</center>
+</body>
+</html>
